@@ -1,0 +1,79 @@
+.asd {
+    width: 250px;
+}
+
+img {
+    // border-radius: 50%;
+    width: 208px;
+    height: 245px;
+    // background-color: white;
+}
+
+.imgContainer {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    padding: 1.8rem;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.formContainer {
+    margin: 0 auto;
+}
+
+.test {
+    background-color: green;
+}
+
+.titulo {
+    font: normal normal 600 25px/55px Gibson;
+    letter-spacing: 0px;
+    color: #4D4F5C;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    color: #A4AFB7;
+    margin-top: 5px;
+
+    //background: #FFFFFF 0% 0% no-repeat padding-box;
+    // box-shadow: 2px 3px 4px #00000029;
+    // opacity: 1;
+}
+
+input::placeholder {
+    color: #A4AFB7;
+}
+
+.regText {
+    font: normal normal normal 14px/13px Open Sans;
+    letter-spacing: 0px;
+    color: #A4AFB7;
+    font-weight: 600;
+}
+
+.linkText {
+    color: #015F91;
+}
+
+button {
+    width: 220px;
+    height: 60px;
+    background: var(--unnamed-color-4487ff) 0% 0% no-repeat padding-box;
+    background: #4487FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #2C1DAD29;
+    border-radius: 38px;
+    opacity: 1;
+
+    color: var(--unnamed-color-f8f8f8);
+    
+
+}
+
+.passText {
+    font: normal normal normal 14px/13px Open Sans;
+    letter-spacing: 0px;
+    color: #A4AFB7;
+}

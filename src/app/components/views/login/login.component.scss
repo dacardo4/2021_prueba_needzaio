@@ -22,8 +22,20 @@ img {
     margin: 0 auto;
 }
 
-.test {
-    background-color: green;
+
+
+.section01 {
+    background-color: #F05C4A;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.data {
+    display: block;
 }
 
 .titulo {
@@ -76,4 +88,75 @@ button {
     font: normal normal normal 14px/13px Open Sans;
     letter-spacing: 0px;
     color: #A4AFB7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden
+}
+.dataBox {
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    // width: 30%;
+    // height: 50%;
+    // background-color: blue;
+    //border-radius: 20px;
+    // transform: translate(-50%, -50%);
+}
+
+.rotation {
+    transform: rotate(-90deg) translate(100vw, 50vh);
+    transform-origin: right bottom;
+}
+
+.test {
+    background-image: url('/assets/imgs/wave.svg');
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 50vw;
+    // transform: rotate(-90deg) translate(0, 30rem);
+
+
+
+    // background-color: green;
+    //background-attachment: fixed;
+    //background-size: 100% 100%;
+}
+
+.boxtest {
+    background-color: #F05C4A;
+    width: 100vh;
+    height: 50vw;
 }

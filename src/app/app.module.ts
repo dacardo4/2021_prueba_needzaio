@@ -7,6 +7,7 @@ import { LoginComponent } from './components/views/login/login.component';
 import { HomeComponent } from './components/views/home/home.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { Page404Component } from './components/views/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     LoginComponent,
     HomeComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,

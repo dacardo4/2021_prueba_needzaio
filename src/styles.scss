@@ -1,1 +1,23 @@
 @import 'colors.scss';
+/* ************************* Fonts ************************* */
+@font-face {
+    font-family: fontGibsonSemiBold;
+    src: url(assets\fonts\Gibson-SemiBold.otf) format("opentype");
+}
+.fontGibsonSemiBold {
+    font-family: 'fontGibsonSemiBold';
+}
+@font-face {
+    font-family: fontOpenSansBold;
+    src: url(assets\fonts\OpenSans-Bold.ttf) format("opentype");
+}
+.fontOpenSansBold {
+    font-family: 'fontOpenSansBold';
+}
+@font-face {
+    font-family: fontOpenSansRegular;
+    src: url(assets\fonts\OpenSans-Regular.ttf) format("opentype");
+}
+.fontOpenSansRegular {
+    font-family: 'fontOpenSansRegular';
+}

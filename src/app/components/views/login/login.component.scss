@@ -1,3 +1,8 @@
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
 .imgContainer {
     border-radius: 50%;
     width: 300px;
@@ -58,119 +63,29 @@ input {
     border: none;
     box-shadow: 2px 3px 4px #00000029;
 }
-
-
-
-
-
-.asd {
-    width: 250px;
-}
-
-img {
-    // border-radius: 50%;
-    width: 208px;
-    height: 245px;
-    // background-color: white;
-}
-
-
-
-
-
-
-
-.section01 {
-    background-color: #F05C4A;
-}
-
-.contenedor {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-.data {
-    display: block;
-}
-
-
-
 input::placeholder {
     color: #A4AFB7;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contenedor {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    overflow: hidden
+img {
+    width: 208px;
+    height: 245px;
 }
 .dataBox {
     z-index: -1;
     position: absolute;
     top: 0%;
     left: 0%;
-    // width: 30%;
-    // height: 50%;
-    // background-color: blue;
-    //border-radius: 20px;
-    // transform: translate(-50%, -50%);
 }
-
 .rotation {
     transform: rotate(-90deg) translate(100vw, 50vh);
     transform-origin: right bottom;
 }
-
 .boxwave {
     background-image: url('/assets/imgs/wave.svg');
     background-repeat: no-repeat;
     width: 100vh;
     height: 50vw;
-    // transform: rotate(-90deg) translate(0, 30rem);
-
-
-
-    // background-color: green;
-    //background-attachment: fixed;
-    //background-size: 100% 100%;
 }
-
 .box01 {
     background-color: #F05C4A;
     width: 100vh;

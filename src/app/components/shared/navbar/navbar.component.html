@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+<nav class="container navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <div class="logoContainer text-center">
+    <img class="navbar-brand" width="45" alt="Needzaio" src="assets/imgs/navbarIcon.svg"/>
+  </div>
+  <div class="collapse navbar-collapse" id="mainMenu">
+    <ul class="nav ml-auto mr-3">
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/home/location']" data-toggle="collapse" data-target="#mainMenu">Location</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/home/blog']" data-toggle="collapse" data-target="#mainMenu">Blog</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/home/services']" data-toggle="collapse" data-target="#mainMenu">Services</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/home/aboutUs']" data-toggle="collapse" data-target="#mainMenu">About Us</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['/home/franchiseWithUs']" data-toggle="collapse" data-target="#mainMenu">Franchise with Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>

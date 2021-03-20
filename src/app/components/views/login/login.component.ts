@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-login',
@@ -22,8 +23,10 @@ export class LoginComponent implements OnInit {
   constructor(
     private _formBuilder: FormBuilder,
     private _router: Router,
+    private _ngxSpinnerService: NgxSpinnerService,
   ) {
     this.initForm();
+    this.showSpinner();
   }
 
   ngOnInit(): void {
@@ -90,4 +93,12 @@ export class LoginComponent implements OnInit {
     return hasError;
   }
 
+  /***************************** Spinner Functions *****************************/
+  showSpinner(): void {
+    this._ngxSpinnerService.show();
+  }
+
+  hideSpinner(): void {
+    this._ngxSpinnerService.hide();
+  }
 }

@@ -1,8 +1,90 @@
-.imgContainer {
-    width: 100px;
-    height: 100px;
+.container {
+    background-color: orange;
 }
 
-.container {
-    background-color: var(--bg-login);
+.imgContainer {
+    background-color: var(--bg-img-cricle);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    img {
+        height: 300px;
+    }
+}
+
+section {
+    height: 90vh;
+}
+.hTittleGen {
+    color: var(--tx-tittle-home);
+    font-size: 45px;
+}
+.hSubtittleGen {
+    color: var(--tx-subtittle-home);
+    font-size: 25px;
+}
+.hTextGen {
+    color: var(--tx-general);
+    font-size: 12px;
+}
+.hTextGen2 {
+    color: var(--tx-general2);
+    font-size: 12px;
+}
+.hTextGen3 {
+    color: var(--tx-subtittle-home);
+    font-size: 12px;
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 12px;
+}
+.hBtn2 {
+    padding: 12px 22px;
+    font-size: 12px;
+    background-color: #F8F8F8;
+    color: #FE6845;
+}
+
+.hSearching {
+    position: relative;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 22px;
+    background-color: white;
+    width: 40%;
+}
+
+.gGo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin: 9px;
+    background-color: var(--tx-subtittle-home);
+    border-radius: 50%;
+}
+
+.imgContainer2 {
+    background-color: var(--bg-img-cricle);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    padding-top: 30px;
+    img {
+        height: 50px;
+    }
+    span {
+        color: #707070;
+    }
+}
+
+.hCard {
+    background-color: #4487FF;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 100px;
 }

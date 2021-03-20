@@ -21,3 +21,28 @@
 .fontOpenSansRegular {
     font-family: 'fontOpenSansRegular';
 }
+@font-face {
+    font-family: fontMuseoSansRounded700;
+    src: url(assets\fonts\MuseoSansRounded700.otf) format("opentype");
+}
+.fontMuseoSansRounded700 {
+    font-family: 'fontMuseoSansRounded700';
+}
+@font-face {
+    font-family: fontComfortaaBold;
+    src: url(assets\fonts\Comfortaa-Bold.ttf) format("opentype");
+}
+.fontComfortaaBold {
+    font-family: 'fontComfortaaBold';
+}
+
+
+button {
+    background-color: var(--btn-bg);
+    border-radius: 38px;
+    color: var(--btn-tx);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    border: none;
+}

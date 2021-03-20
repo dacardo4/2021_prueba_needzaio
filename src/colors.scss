@@ -1,4 +1,13 @@
 :root {
+    /** Navbar */
+    --nb-bg: rgba(0,0,0,0);
+    --nb-tx: white;
+    --nb-tx-sel: #ffeb3b;
+    /** Footer */
+    --ft-bg: #FF6752;
+    --ft-tx-tittle: #FFE530;
+    --ft-tx-gen: #FFFFFF;
+    /** Views */
     --bg-login: #FF6752;
     --tx-tittle-general: #4D4F5C;
     --tx-descrip-general: #A4AFB7;

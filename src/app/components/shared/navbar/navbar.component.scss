@@ -1,5 +1,5 @@
 nav {
-    background: rgba(0,0,0,0) !important;
+    background: var(--nb-bg) !important;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -18,7 +18,7 @@ nav {
 }
 
 a {
-    color: white;
+    color: var(--nb-tx);
     font-weight: 300;
 }
 
@@ -31,6 +31,6 @@ ul {
 }
 
 .active a {
-    color: #ffeb3b !important;
+    color: var(--nb-tx-sel);
     font-weight: 700;
 }

@@ -8,6 +8,7 @@ import { HomeComponent } from './components/views/home/home.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { Page404Component } from './components/views/page404/page404.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { Page404Component } from './components/views/page404/page404.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

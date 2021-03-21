@@ -6,8 +6,8 @@ import { Page404Component } from './components/views/page404/page404.component';
 
 
 const routes: Routes = [
-  // { path: '', component: LoginComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
+  // { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'home/:id', component: HomeComponent },
   { path: '**', component: Page404Component },

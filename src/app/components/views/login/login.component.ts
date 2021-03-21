@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { LoginService } from 'src/app/services/login.service';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -24,9 +26,9 @@ export class LoginComponent implements OnInit {
     private _formBuilder: FormBuilder,
     private _router: Router,
     private _ngxSpinnerService: NgxSpinnerService,
+    private _loginService: LoginService,
   ) {
     this.initForm();
-    this.showSpinner();
   }
 
   ngOnInit(): void {
@@ -46,21 +48,56 @@ export class LoginComponent implements OnInit {
   }
 
   doLogin(): void {
-    let isLoginOk = true;
-    if (isLoginOk) {
-      console.log('logged!!!');
-      this.goToAnotherPath('/home');
-    } else {
-      console.log('NO logged!!!');
-      this.error = {
-        login: true,
-        loginMessage: 'Datos invalidos!'
-      }
-      this.error = {
-        login: true,
-        loginMessage: 'Contacta a un administrador!'
-      }
+    // let isLoginOk = true;
+    // if (isLoginOk) {
+    //   console.log('logged!!!');
+    //   this.goToAnotherPath('/home');
+    // } else {
+    //   console.log('NO logged!!!');
+    //   this.error = {
+    //     login: true,
+    //     loginMessage: 'Datos invalidos!'
+    //   }
+    //   this.error = {
+    //     login: true,
+    //     loginMessage: 'Contacta a un administrador!'
+    //   }
+    // }
+    this.showSpinner();
+    let data = {
+      "email": "dacardo4@asdasd.com",
+      // "email": "eve.holt@reqres.in",
+      // "password": "cityslicka"
+      "password": "987654321"
     }
+    this._loginService.postLogin(data).pipe(take(1)).subscribe(
+      data => {
+        this.hideSpinner()
+        console.log('Login: ',data);
+        if(data.token) {
+          this.goToAnotherPath('/home');
+        } else {
+          this.error = {
+            login: true,
+            loginMessage: 'Datos invalidos!'
+          }
+        }
+      }, error => {
+        if (error.error.error == "Missing password") {
+          this.error = {
+            login: true,
+            loginMessage: 'Datos invalidos!'
+          }
+        } else {
+          this.error = {
+            login: true,
+            loginMessage: 'Contacta a un administrador!'
+          }
+        }
+        console.log('Error Login: ',error);
+        this.hideSpinner()
+      }
+    );
   }
 
   /** Navigations Functions */

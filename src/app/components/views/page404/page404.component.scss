@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.cont1 {
+    position: relative;
+}
+
+.space {
+    height: 160px;
+    background-color: var(--nb-bg);
+}
+
+.positInfo {
+    position: absolute;
+    z-index: 1;
+}
+
+.jumbotron {
+    .display-4 {
+        color: var(--nb-bg);
+    }
+}

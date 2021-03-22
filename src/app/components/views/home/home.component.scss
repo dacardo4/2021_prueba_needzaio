@@ -29,49 +29,11 @@
     left: 0;
 }
 
-.back001 {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg {
-        position: relative;
-        display: block;
-        width: calc(218% + 1.3px);
-        height: 500px;
-        transform: rotateY(180deg);
-    }
-    .shape-fill {
-        fill: #FF6752;
-    }
-}
-
 .contSec02 {
     position: absolute;
     z-index: 1;
 }
-.back002 {
-    z-index: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    svg {
-        position: relative;
-        display: block;
-        width: calc(220% + 1.3px);
-        height: 500px;
-        transform: rotateY(180deg);
-    }
-    .shape-fill {
-        fill: #4487FF;
-    }
-}
+
 .back003 {
     z-index: 0;
     position: absolute;

@@ -48,29 +48,8 @@ export class LoginComponent implements OnInit {
   }
 
   doLogin(): void {
-    // let isLoginOk = true;
-    // if (isLoginOk) {
-    //   console.log('logged!!!');
-    //   this.goToAnotherPath('/home');
-    // } else {
-    //   console.log('NO logged!!!');
-    //   this.error = {
-    //     login: true,
-    //     loginMessage: 'Datos invalidos!'
-    //   }
-    //   this.error = {
-    //     login: true,
-    //     loginMessage: 'Contacta a un administrador!'
-    //   }
-    // }
     this.showSpinner();
-    let data = {
-      "email": "dacardo4@asdasd.com",
-      // "email": "eve.holt@reqres.in",
-      // "password": "cityslicka"
-      "password": "987654321"
-    }
-    this._loginService.postLogin(data).pipe(take(1)).subscribe(
+    this._loginService.postLogin(this.formLogin.value).pipe(take(1)).subscribe(
       data => {
         this.hideSpinner()
         console.log('Login: ',data);
@@ -83,16 +62,16 @@ export class LoginComponent implements OnInit {
           }
         }
       }, error => {
-        if (error.error.error == "Missing password") {
-          this.error = {
-            login: true,
-            loginMessage: 'Datos invalidos!'
-          }
-        } else {
-          this.error = {
-            login: true,
-            loginMessage: 'Contacta a un administrador!'
-          }
+        switch (error.error.error) {
+          case "Missing password":
+            this.error = { login: true, loginMessage: 'Password Erroneo!' }
+            break;
+          case "user not found":
+            this.error = { login: true, loginMessage: 'Usuario no registrado!' }
+            break;
+          default:
+            this.error = { login: true, loginMessage: 'Contacta a un administrador!' }
+            break;
         }
         console.log('Error Login: ',error);
         this.hideSpinner()

@@ -16,13 +16,19 @@
           </div>
         </div>
         <div class="mt-5 mx-0">
-          <form novalidate [formGroup]="formLogin" (ngSubmit)="submitformLogin($event)">
-            <input formControlName="email" type="text" class="form-control" placeholder="Email" [class.is-invalid]="getIsInvalid(formLogin,'email')" [class.is-valid]="getIsValid(formLogin,'email')">
+          <form novalidate [formGroup]="formLogin" (ngSubmit)="submitformLogin($event)" autocomplete="off">
+            <div class="md-form mb-0">
+              <input mdbInput formControlName="email" id="email" name="email" type="text" class="form-control" [class.is-invalid]="getIsInvalid(formLogin,'email')" [class.is-valid]="getIsValid(formLogin,'email')" autocomplete="off" />
+              <label for="email">EMAIL</label>
+            </div>
             <div *ngIf="getPropertyHasErrors(formLogin,'email')" class="mb-1">
               <span *ngIf="getPropertyErrors(formLogin,'email','required')" class="alert-danger form-control">Ingresar Email</span>
               <span *ngIf="getPropertyErrors(formLogin,'email','pattern')" class="alert-danger form-control">Ingresa un Email valido</span>
             </div>
-            <input formControlName="password" type="password" class="form-control" [class.is-invalid]="getIsInvalid(formLogin,'password')" [class.is-valid]="getIsValid(formLogin,'password')">
+            <div class="md-form mb-0">
+              <input mdbInput formControlName="password" id="password" type="password" class="form-control" [class.is-invalid]="getIsInvalid(formLogin,'password')" [class.is-valid]="getIsValid(formLogin,'password')">
+              <label for="password">CONTRASEÑA</label>
+            </div>
             <div *ngIf="getPropertyHasErrors(formLogin,'password')" class="mb-1">
               <span *ngIf="getPropertyErrors(formLogin,'password','required')" class="alert-danger form-control">Ingresar Password</span>
               <span *ngIf="getPropertyErrors(formLogin,'password','minlength')" class="alert-danger form-control">Minimo 5 caracteres</span>
@@ -42,9 +48,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="dataBox rotation">
-    <div class="box01"></div>
-    <div class="boxwave"></div>
   </div>
 </div>

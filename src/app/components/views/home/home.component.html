@@ -80,13 +80,67 @@
   </section>
 
   <section id="section003" #section003>
-    <div class="container h-100">
-      <div class="contSec02 h-100 w-50">
+    <div class="container h-100 w-100 p-0">
+      <div class="contSec02 h-100 w-100">
         <div>
-          <span class="hSubtittleGen fontComfortaaBold">Our Services</span><br><br>
+          <span class="hSubtittleGen fontComfortaaBold">Nuestros Médicos</span><br><br>
         </div>
-        <div>
-          carrousel
+        <div class="hConSec3 w-100 h-100">
+          <div class="hSec3Carr w-100">
+            <div class="row p-0 pt-4 m-0">
+              <div class="col-1 my-auto">
+                <!-- <div class="hCarrArr text-center mx-auto" (click)="medSelected = (medSelected + 2)%3">
+                  <i class="fa fa-arrow-left"></i>
+                </div> -->
+              </div>
+              <div class="col-4">
+                <div class="hCardMed p-4">
+                  <img src="{{ medics[(medSelected+2)%3]['url'] }}" class="img-fluid"><br><br>
+                  <span>{{ medics[(medSelected+2)%3]['nombre'] }}</span><br><br>
+                  <span>{{ medics[(medSelected+2)%3]['descrip'] }}</span>
+                </div>
+              </div>
+              <div class="col-2"></div>
+              <div class="col-4">
+                <div class="hCardMed">
+                  <div class="hCardMed p-4">
+                    <img src="{{ medics[(medSelected+1)%3]['url'] }}" class="img-fluid"><br><br>
+                    <span>{{ medics[(medSelected+1)%3]['nombre'] }}</span><br><br>
+                    <span>{{ medics[(medSelected+1)%3]['descrip'] }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 my-auto">
+                <!-- <div class="hCarrArr text-center mx-auto" (click)="medSelected = (medSelected + 1)%3">
+                  <i class="fa fa-arrow-right"></i>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="w-100 hSec3Carr row p-0 m-0">
+            <div class="col-1 my-auto">
+              <div class="hCarrArr text-center mx-auto" (click)="medSelected = (medSelected + 2)%3">
+                <i class="fa fa-arrow-left"></i>
+              </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-6">
+              <div class="hCardMed">
+                <div class="hCardMed2 p-4">
+                  <br><br>
+                  <img src="{{ medics[medSelected]['url'] }}" class="img-fluid"><br><br>
+                  <span>{{ medics[medSelected]['nombre'] }}</span><br><br>
+                  <span>{{ medics[medSelected]['descrip'] }}</span><br><br>
+                </div>
+              </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-1 my-auto">
+              <div class="hCarrArr text-center mx-auto" (click)="medSelected = (medSelected + 1)%3">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

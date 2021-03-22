@@ -8,6 +8,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  medSelected = 0;
+  medics = [
+    { nombre: "Juliana Medina", url: "https://reqres.in/img/faces/7-image.jpg", descrip: "Alcance rotatorio en el hospital de especialidades de la Universidad Autónoma de México y con experiencia en cirugía de tejidos blandos."},
+    { nombre: "Jimmy Perez", url: "https://reqres.in/img/faces/8-image.jpg", descrip: "Cuenta con un diplomado en manejo clínico y biológico de fauna silvestre y un diplomado en medicina biorreguladora y mucha experiencia."},
+    { nombre: "Juan Sanchez", url: "https://reqres.in/img/faces/9-image.jpg", descrip: "Egresado de la Universidad de La Salle. Tiene un diplomado en medicina biológica con énfasis en clínica, cirugía y nutrición de caninos y felinos."},
+  ]
+
   constructor(
     private _activatedRoute: ActivatedRoute,
     private _router: Router,

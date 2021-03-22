@@ -1,4 +1,4 @@
-.container {
+.container, .hConSec3 {
     position: relative;
 }
 .test {
@@ -18,6 +18,12 @@
 
 .hSec4Container {
     margin-top: 96px;
+}
+.hSec3Carr {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .back001 {
@@ -227,6 +233,29 @@ button {
     margin: 9px;
     background-color: var(--tx-subtittle-home);
     border-radius: 50%;
+}
+.hCarrArr {
+    width: 30px;
+    height: 30px;
+    margin: 9px;
+    background-color: var(--tx-subtittle-home);
+    border-radius: 50%;
+}
+.hCardMed {
+    background-color: var(--bg-card1);
+    border: 1px solid #dfdddd;
+    border-radius: 10px;
+    img {
+        border-radius: 50%;
+    }
+}
+.hCardMed2 {
+    background-color: var(--bg-card2);
+    border: 1px solid #dfdddd;
+    border-radius: 10px;
+    img {
+        border-radius: 50%;
+    }
 }
 
 .imgContainer2 {

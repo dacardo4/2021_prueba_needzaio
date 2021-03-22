@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { LoginService } from 'src/app/services/login.service';
 import { take } from 'rxjs/operators';
+import { StorageService } from 'src/app/services/storage/storage.service';
 
 @Component({
   selector: 'app-login',
@@ -27,6 +28,7 @@ export class LoginComponent implements OnInit {
     private _router: Router,
     private _ngxSpinnerService: NgxSpinnerService,
     private _loginService: LoginService,
+    private _storageService: StorageService,
   ) {
     this.initForm();
   }
@@ -54,13 +56,9 @@ export class LoginComponent implements OnInit {
         this.hideSpinner()
         console.log('Login: ',data);
         if(data.token) {
+          this._storageService.setStorage(data.token);
           this.goToAnotherPath('/home');
-        } else {
-          this.error = {
-            login: true,
-            loginMessage: 'Datos invalidos!'
-          }
-        }
+        } else this.error = { login: true, loginMessage: 'Datos invalidos!' }
       }, error => {
         switch (error.error.error) {
           case "Missing password":

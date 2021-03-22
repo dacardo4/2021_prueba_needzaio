@@ -1,6 +1,62 @@
-.container {
+.space {
+    height: 80px;
+    background-color: var(--nb-bg);
+}
+
+.test {
+
     background-color: orange;
 }
+.back001 {
+
+    // background-image: url('/assets/curves/home002.svg');
+    background-image: url('/assets/curves/home001.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: calc(220% + 1.3px);
+    // position: relative;
+    // display: block;
+    
+}
+
+.custom-shape-divider-bottom-1616382827 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1616382827 svg {
+    position: relative;
+    display: block;
+    width: calc(220% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1616382827 .shape-fill {
+    fill: #4487FF;
+}
+
+svg {
+
+    position: relative;
+        display: block;
+        width: calc(220% + 1.3px);
+        height: 500px;
+        transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
 
 .imgContainer {
     background-color: var(--bg-img-cricle);
@@ -21,6 +77,7 @@
 
 section {
     height: 90vh;
+    position: relative;
 }
 .hTittleGen {
     color: var(--tx-tittle-home);

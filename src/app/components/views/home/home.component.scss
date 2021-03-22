@@ -105,15 +105,15 @@
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
     svg {
         position: relative;
         display: block;
-        width: calc(195% + 1.3px);
-        height: 150px;
-        transform: rotateY(180deg);
+        width: calc(263% + 1.3px);
+        height: 109px;
     }
     .shape-fill {
-        fill: #FFE530;
+        fill: #FF6752;
     }
 }
 

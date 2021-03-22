@@ -2,7 +2,7 @@
     background-color: var(--ft-tx-gen);
 }
 .space {
-    height: 80px;
+    height: 160px;
     background-color: var(--nb-bg);
 }
 
@@ -10,20 +10,40 @@
     background-image: url('/assets/curves/union.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hSec4Container {
     margin-top: 96px;
 }
 
+// .back001 {
+//     // background-image: url('/assets/curves/home002.svg');
+//     background-image: url('/assets/curves/home001.svg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     // width: calc(220% + 1.3px);
+//     // position: relative;
+//     // display: block;
+// }
 .back001 {
-    // background-image: url('/assets/curves/home002.svg');
-    background-image: url('/assets/curves/home001.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    // width: calc(220% + 1.3px);
-    // position: relative;
-    // display: block;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg {
+        position: relative;
+        display: block;
+        width: calc(218% + 1.3px);
+        height: 500px;
+        transform: rotateY(180deg);
+    }
+    .shape-fill {
+        fill: #FF6752;
+    }
 }
 
 .contSec02 {
@@ -145,9 +165,18 @@
 }
 
 section {
-    height: 90vh;
+    height: 80vh;
     position: relative;
 }
+.hSection {
+    height: 55vh;
+    position: relative;
+}
+.hSection2 {
+    height: 70vh;
+    position: relative;
+}
+
 .hTittleGen {
     color: var(--tx-tittle-home);
     font-size: 45px;

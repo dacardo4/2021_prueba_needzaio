@@ -42,6 +42,25 @@
 .back003 {
     z-index: 0;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+        position: relative;
+        display: block;
+        width: calc(207% + 1.3px);
+        height: 272px;
+    }
+    .shape-fill {
+        fill: #4487FF;
+    }
+}
+.back004 {
+    z-index: 0;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -50,12 +69,12 @@
     svg {
         position: relative;
         display: block;
-        width: calc(220% + 1.3px);
-        height: 500px;
+        width: calc(195% + 1.3px);
+        height: 150px;
         transform: rotateY(180deg);
     }
     .shape-fill {
-        fill: #4487FF;
+        fill: #FFE530;
     }
 }
 

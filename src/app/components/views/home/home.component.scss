@@ -1,14 +1,12 @@
+.test {
+    background-color: var(--ft-tx-gen);
+}
 .space {
     height: 80px;
     background-color: var(--nb-bg);
 }
 
-.test {
-
-    background-color: orange;
-}
 .back001 {
-
     // background-image: url('/assets/curves/home002.svg');
     background-image: url('/assets/curves/home001.svg');
     background-size: cover;
@@ -16,47 +14,50 @@
     // width: calc(220% + 1.3px);
     // position: relative;
     // display: block;
-    
 }
 
-.custom-shape-divider-bottom-1616382827 {
+.contSec02 {
+    position: absolute;
+    z-index: 1;
+}
+.back002 {
+    z-index: 0;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-}
-
-.custom-shape-divider-bottom-1616382827 svg {
-    position: relative;
-    display: block;
-    width: calc(220% + 1.3px);
-    height: 500px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1616382827 .shape-fill {
-    fill: #4487FF;
-}
-
-svg {
-
-    position: relative;
+    svg {
+        position: relative;
         display: block;
         width: calc(220% + 1.3px);
         height: 500px;
         transform: rotateY(180deg);
+    }
+    .shape-fill {
+        fill: #4487FF;
+    }
 }
-
-
-
-
-
-
-
-
-
+.back003 {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg {
+        position: relative;
+        display: block;
+        width: calc(220% + 1.3px);
+        height: 500px;
+        transform: rotateY(180deg);
+    }
+    .shape-fill {
+        fill: #4487FF;
+    }
+}
 
 .imgContainer {
     background-color: var(--bg-img-cricle);
@@ -112,12 +113,14 @@ button {
 }
 
 .hSearching {
+    border: 1px solid #dfdddd;
     position: relative;
-    border: none;
+    //border: none;
     border-radius: 40px;
     padding: 12px 22px;
     background-color: white;
     width: 40%;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 .gGo {
@@ -132,12 +135,13 @@ button {
 }
 
 .imgContainer2 {
-    background-color: var(--bg-img-cricle);
-    background-color: rgba(255,255,255,0.1);
+    background-color: white;
+    border: 1px solid #dfdddd;
     border-radius: 20px;
     width: 150px;
     height: 150px;
     padding-top: 30px;
+    box-shadow: 0px 3px 6px #00000029;
     img {
         height: 50px;
     }

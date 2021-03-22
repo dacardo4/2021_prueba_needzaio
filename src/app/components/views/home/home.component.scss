@@ -77,6 +77,45 @@
         fill: #FFE530;
     }
 }
+.back005 {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    svg {
+        position: relative;
+        display: block;
+        width: calc(195% + 1.3px);
+        height: 150px;
+        transform: rotateY(180deg);
+    }
+    .shape-fill {
+        fill: #FFE530;
+    }
+}
+.back006 {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg {
+        position: relative;
+        display: block;
+        width: calc(195% + 1.3px);
+        height: 150px;
+        transform: rotateY(180deg);
+    }
+    .shape-fill {
+        fill: #FFE530;
+    }
+}
 
 .imgContainer {
     background-color: var(--bg-img-cricle);
